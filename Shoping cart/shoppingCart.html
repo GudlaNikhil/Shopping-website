@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart.</title>
+    <link rel="stylesheet" href="shoppingCart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <div class="left-div">
+        <div class="i1">
+            <img class="a1" src="/Photos/Black and White Nike Air Force 1 Pair.png">
+            <h4 class="h1">Nike</h4>
+            <h4 class="price">₹ 7,495</h4>
+            <button class="btn" onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <div class="i2" id="">
+            <img class="a2" src="/Photos/Navy and White Adidas Sneaker Pair.png">
+            <h4 class="h2">Adidas</h4>
+            <h4 class="price">₹ 5,999</h4>
+            <button class="btn" onclick="addToCart(2)">Add to Cart</button>
+        </div>
+        <div class="i3">
+            <img class="a3" src="/Photos/Navy and Orange Puma Running Sneakers.png">
+            <h4 class="h2">Puma</h4>
+            <h4 class="price">₹ 4,999</h4>
+            <button class="btn" onclick="addToCart(3)">Add to Cart</button>
+        </div>
+        <div class="i4">
+            <img class="a4" src="/Photos/Retro Reebok Sneakers on Black.png">
+            <h4 class="h1">Reebok</h4>
+            <h4 class="price">₹ 3,299</h4>
+            <button class="btn" onclick="addToCart(4)">Add to Cart</button>
+        </div>
+        <div class="i5">
+            <img class="a5" src="/Photos/Campus Chunky Sneakers Pair.png">
+            <h4 class="h1">Campus</h4>
+            <h4 class="price">₹ 1,299</h4>
+            <button class="btn" onclick="addToCart(5)">Add to Cart</button>
+        </div>
+        <div class="i6">
+            <img class="a6" src="/Photos/Asian Blue-White Running Sneakers.png">
+            <h4 class="h1">Asian</h4>
+            <h4 class="price">₹ 999</h4>
+            <button class="btn" onclick="addToCart(6)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="right-div">
+        <h2 class="right-header">Your Cart (<span id="cart-count">0</span>)</h2>
+        <p id="empty">Your cart is empty.</p>
+        <table class="cart-tables" id="cart-table" hidden>
+        <thead>
+            <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+        </table>
+        <div class="total">
+        <span class="grand-total">Grand Total : </span> <span id="grand-total"> ₹0.00</span>
+        </div>
+    </div>
+    <script src="/shoppingCart.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Suravaram&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    transition: all 0.35s ease;
+}
+body{
+    display:grid;
+    grid-template-columns: 900px 455px;
+    position: fixed;
+}
+.left-div{
+    height:620px;
+    left:0;
+    top:0;
+    display: grid;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-top: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: start;
+    padding:0px 20px 7px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.right-div{
+    left:0;
+    top:0;
+    height:620px;
+    display:grid;
+    grid-template-rows: auto;
+    align-content: start;
+    gap: 0;
+    background-color:rgba(3, 255, 3, 0.555);
+    place-items: start;
+    align-items: start;
+    justify-content: start;
+    border-radius: 15px;
+    padding: 0px 20px 7px 20px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+.i1,.i2,.i3,.i4,.i5,.i6{
+    margin-top: 0px;
+    width: 250px;
+    height: 280px;
+    place-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.4s ease;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.i1:hover,.i2:hover,.i3:hover,
+.i4:hover,.i5:hover,.i6:hover{
+background-color : rgb(222, 56, 84);
+}
+.a1,.a4,.a5,.a6{
+    width:120px;
+    height:130px;
+    padding-top: 10px;
+}
+.a2,.a3{
+    width:120px;
+    height:155px;
+    margin-top: -10px;
+    padding-top: 10px;
+}
+.h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.price{
+    margin-top: 0px;
+}
+.h2{
+    
+    margin-top:5px;
+}
+.btn{
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(2, 77, 2);
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    padding:10px 10px 10px 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.right-div {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0 12px;
+}
+
+.cart-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.right-div {
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+table,
+.cart-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 17px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.remove {
+    padding: 5px 7px;
+    font-size: 12px;
+    color: white;
+    background: rgba(168, 4, 4, 0.802);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    color: black;
+}
+.remove:hover{
+    background-color: red;
+    color: white;
+}
+/* Column widths */
+th:nth-child(1), td:nth-child(1) { width: 19%; }
+th:nth-child(2), td:nth-child(2) { width: 22%; }
+th:nth-child(3), td:nth-child(3) { width: 20%; }
+th:nth-child(4), td:nth-child(4) { width: 22%; }
+th:nth-child(5), td:nth-child(5) { width: 17%; }
+
+/* Quantity controls */
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.quantity button {
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.15s ease;
+}
+.quantity button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.quantity {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.quantity button, .remove {
+padding: 5px 10px;
+}
+.remove {
+background: #d93025;
+}
+.total {
+display: flex;
+justify-content: end;
+padding: 6px;
+text-align: right;
+font-size: 18px;
+font-weight: bold;
+background-color: black;
+color: white;
+width: 430px;
+height: 50px;
+border-radius: 10px;
+}
+#grand-total,.grand-total{
+    justify-self: center;
+    align-self: center;
+    margin-right: 10px;
+}
+#empty {
+color: #777;
+}
+.right-div {
+    min-width: 0;
+    overflow-x: auto;
+}
+.added{
+    display: flex;
+} 
+.added-p{
+    margin-left: 150px;
+    color: green;
+    font-weight: 500;
+}
